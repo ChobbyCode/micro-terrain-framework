@@ -53,3 +53,9 @@ MicroTerrain.Push(X, Y)
 ```
 
 The program also allows to be used a blocks in the Block Editor.
+
+You can test you have installed it correctly with the following code:
+```
+MicroTerrain.Scene([1, 4], [2, 3])
+```
+You use A To either move left or up, you use B to either move down or right. Use A+B to change the rotation of these.
