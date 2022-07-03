@@ -65,7 +65,7 @@ You use A To either move left or up, you use B to either move down or right. Use
 You can install a beta by copying the one of the following links and using the default installation guides.
 
 - https://github.com/ChobbyCode/micro-terrain-framework/tree/Multiplayer_Beta
-- https://github.com/ChobbyCode/micro-terrain-framework/tree/Collision_beta
+- https://github.com/ChobbyCode/micro-terrain-framework/tree/multiplayer_enabledbydefault_fix
 
 BSD 2-Clause License
 
