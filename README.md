@@ -1,3 +1,10 @@
+Use Micro Terrain For Side Scrollers. Multiplayer does work using Radio but the update time is quite slow
+
+What I'm trying to get working
+
+-Collision
+-Better Multiplayer Using Radio
+
 
 > Open this page at [https://chobbycode.github.io/micro-terrain-framework-version-101/](https://chobbycode.github.io/micro-terrain-framework-version-101/)
 

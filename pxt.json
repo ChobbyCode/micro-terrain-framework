@@ -8,13 +8,14 @@
     },
     "files": [
         "main.ts",
-        "README.md"
+        "README.md",
+        "scrollerextension.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
     "targetVersions": {
-        "target": "5.0.6",
+        "target": "5.0.9",
         "targetId": "microbit"
     },
     "supportedTargets": [
