@@ -55,23 +55,6 @@ namespace MicroTerrain {
         objects_y.pop()
     }
     /**
-     * Used When Imported Source Code
-     */
-    //% block
-    export function Source(): void {
-
-    }
-    /**
-     * Use This To Setup Multiplayer
-     */
-    //% block
-
-    export function Port(port: number): void{
-        //radio.setGroup(port)
-        //multiplayer = true
-    }
-
-    /**
      * Use This To Disable Movement On The X Axis
      */
     //% block
@@ -99,10 +82,6 @@ input.onButtonPressed(Button.A, function () {
             y_ofset += -1
         }
     }
-    if(multiplayer == true){
-        radio.sendString("x" + x_ofset)
-        radio.sendString("y" + y_ofset)
-    }
     drawScreen()
 })
 input.onButtonPressed(Button.AB, function () {
@@ -122,10 +101,6 @@ input.onButtonPressed(Button.B, function () {
             y_ofset += 1
         }
     }
-    if (multiplayer == true) {
-        radio.sendString("x" + x_ofset)
-        radio.sendString("y" + y_ofset)
-    }
     drawScreen()
 })
 
@@ -141,29 +116,7 @@ function drawScreen() {
         led.plot(objects_x[i] - x_ofset, objects_y[i] - y_ofset)
     }
     led.plot(2, 2)
-    if(multiplayer = true){
-        led.plot((multi_x - x_ofset - 2), (multi_y - y_ofset - 2))
-    }
 }
-
-radio.onReceivedString(function(receivedString: string) {
-    if (receivedString.charAt(0) == "x"){
-        multi_x = parseInt(receivedString.substr(1, receivedString.length))
-    }else if(receivedString.charAt(0) == "y"){
-        multi_x = parseInt(receivedString.substr(1, receivedString.length))
-    }else{
-
-        basic.showLeds(`
-        . . # . .
-        . . # . .
-        . . # . .
-        . . . . .
-        . . # . .
-        `)
-    }
-
-    drawScreen()
-})
 
 
 
@@ -172,7 +125,6 @@ let objects_x: number[] = []
 let x_ofset: number
 let y_ofset: number
 let move_axis: string
-let multiplayer : boolean
 let multi_x: number
 let multi_y: number
 let collision: boolean
@@ -183,7 +135,6 @@ allow_move_y = true
 collision = false
 multi_x = 0
 multi_y = 0
-multiplayer = false
 move_axis = "false"
 x_ofset = 3
 y_ofset = 1
