@@ -3,19 +3,17 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*",
-        "microphone": "*"
+        "radio": "*"
     },
     "files": [
-        "main.ts",
         "README.md",
-        "scrollerextension.ts"
+        "custom.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
     "targetVersions": {
-        "target": "5.0.9",
+        "target": "5.0.6",
         "targetId": "microbit"
     },
     "supportedTargets": [
