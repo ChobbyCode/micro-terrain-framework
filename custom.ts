@@ -72,13 +72,17 @@ namespace MicroTerrain {
     }
 
     /**
-     * Use This To Setup Multiplayer
+     * Use This To Disable Movement On The X Axis
      */
     //% block
 
     export function DisableXMovement(): void{
         allow_move_x = false
     }
+    /**
+     * Use This To Disable Movement On The Y Axis
+     */
+    //% block
     export function DisableYMovement(): void{
         allow_move_y = false
     }
