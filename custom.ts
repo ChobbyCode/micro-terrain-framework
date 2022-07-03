@@ -61,8 +61,8 @@ namespace MicroTerrain {
     //% block
 
     export function Port(port: number){
-        radio.setGroup(port)
-        multiplayer = true
+        //radio.setGroup(port)
+        //multiplayer = true
     }
 }
  
@@ -112,7 +112,7 @@ function drawScreen() {
     }
     led.plot(2, 2)
     if(multiplayer = true){
-        led.plot((multi_x - x_ofset + 2), (multi_y - y_ofset + 2))
+        led.plot((multi_x - x_ofset - 2), (multi_y - y_ofset - 2))
     }
 }
 
@@ -131,7 +131,8 @@ radio.onReceivedString(function(receivedString: string) {
         . . # . .
         `)
     }
-    led.plot((multi_x - x_ofset), (multi_y - y_ofset))
+
+    drawScreen()
 })
 
 
