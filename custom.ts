@@ -66,7 +66,7 @@ namespace MicroTerrain {
      */
     //% block
 
-    export function Port(port: number){
+    export function Port(port: number): void{
         //radio.setGroup(port)
         //multiplayer = true
     }
@@ -76,10 +76,10 @@ namespace MicroTerrain {
      */
     //% block
 
-    export function DisableXMovement(){
+    export function DisableXMovement(): void{
         allow_move_x = false
     }
-    export function DisableYMovement() {
+    export function DisableYMovement(): void{
         allow_move_y = false
     }
 }
