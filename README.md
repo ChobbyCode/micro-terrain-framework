@@ -1,38 +1,55 @@
-Use Micro Terrain For Side Scrollers. Multiplayer does work using Radio but the update time is quite slow
+# Micro Terrain Version 0.1.2
 
-What I'm trying to get working
+## About
 
--Collision
--Better Multiplayer Using Radio
+Micro Terrain Is A Free Extension For MicroBit Makecode. It is currently version 0.1.1.
+
+### It Allows You To
+- Create Sidescrollers
+- Basic Multiplayer Using Radio
+
+## How To Setup
+
+### Import As Extension
+
+First You Need To Go To https://makecode.microbit.org/ and select new project. On sellect a block click Extensions;
+click search and put in the following link https://github.com/ChobbyCode/micro-terrain-framework-version-101. Click the one title Micro Terrain Framework.
+
+### Edit Source Code 
+
+First You Need To Go To https://makecode.microbit.org/ and select import. When you have clicked import; click from URL. 
+In the URL space put the following link https://github.com/ChobbyCode/micro-terrain-framework-version-101 and the project will be imported.
+
+## Help
+
+Unable To Import Extension Using link
+
+- Import As Source Code And  In Explorer Click Add And Create File Named Main.ts 
+
+```
+MicroTerrain.Source()
+```
 
 
-> Open this page at [https://chobbycode.github.io/micro-terrain-framework-version-101/](https://chobbycode.github.io/micro-terrain-framework-version-101/)
+ 
 
-## Use as Extension
 
-This repository can be added as an **extension** in MakeCode.
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/chobbycode/micro-terrain-framework-version-101** and import
 
-## Edit this project ![Build status badge](https://github.com/chobbycode/micro-terrain-framework-version-101/workflows/MakeCode/badge.svg)
+## Usage Of Program
 
-To edit this repository in MakeCode.
+The following code will be in JavaScript but will also work with TypeScript.
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/chobbycode/micro-terrain-framework-version-101** and click import
+We can use the following code to setup a basic scene at the start of the game when the MicroBit Starts. 
+In  the first slot we put the X Positions and in the one after Y.
+```
+MicroTerrain.Scene([Put X Positions Here], [Put Y Positions Here])
+```
 
-## Blocks preview
+We can also add a object at any time using the following ChobbyCode. The X is the X Position
+and Y is the Y Position
+```
+MicroTerrain.Push(X, Y)
+```
 
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-
-![A rendered view of the blocks](https://github.com/chobbycode/micro-terrain-framework-version-101/raw/master/.github/makecode/blocks.png)
-
-#### Metadata (used for search, rendering)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+The program also allows to be used a blocks in the Block Editor.

@@ -1,6 +1,7 @@
 //Below Is code For Updates
-
-
+//MicroTerrain.Pop()
+//MicroTerrain.Push(0, 0)
+//MicroTerrain.Scene([], [])
 
 /**
 * Use this file to define custom functions and blocks.
@@ -46,6 +47,13 @@ namespace MicroTerrain {
     export function Pop(): void {
         objects_x.pop()
         objects_y.pop()
+    }
+    /**
+     * Used When Imported Source Code
+     */
+    //% block
+    export function Source(): void {
+
     }
 }
 
