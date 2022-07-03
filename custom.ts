@@ -2,6 +2,13 @@
 //MicroTerrain.Push(0, 0)
 //MicroTerrain.Scene([], [])
 
+
+//BSD 2 - Clause License
+
+//Copyright(c) 2022, Jacob Hadfield All rights reserved.
+
+
+
 /**
 * Use this file to define custom functions and blocks.
 * Read more at https://makecode.microbit.org/blocks/custom
