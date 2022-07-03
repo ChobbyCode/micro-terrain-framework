@@ -1,4 +1,3 @@
-//Below Is code For Updates
 //MicroTerrain.Pop()
 //MicroTerrain.Push(0, 0)
 //MicroTerrain.Scene([], [])
@@ -70,17 +69,24 @@ namespace MicroTerrain {
      */
     //% block
 
-    export function EnableCollision() {
-        collision = true
+    export function DisableXMovement(){
+        allow_move_x = false
+    }
+    export function DisableYMovement() {
+        allow_move_y = false
     }
 }
  
 
 input.onButtonPressed(Button.A, function () {
     if (move_axis == "false") {
-        x_ofset += -1
+        if(allow_move_x == true){
+            x_ofset += -1
+        }
     } else if (move_axis == "true") {
-        y_ofset += -1
+        if(allow_move_y == true){
+            y_ofset += -1
+        }
     }
     if(multiplayer == true){
         radio.sendString("x" + x_ofset)
@@ -97,9 +103,13 @@ input.onButtonPressed(Button.AB, function () {
 })
 input.onButtonPressed(Button.B, function () {
     if (move_axis == "false") {
-        x_ofset += 1
+        if(allow_move_x == true){
+            x_ofset += 1
+        }
     } else if (move_axis == "true") {
-        y_ofset += 1
+        if(allow_move_y == true){
+            y_ofset += 1
+        }
     }
     if (multiplayer == true) {
         radio.sendString("x" + x_ofset)
@@ -107,7 +117,7 @@ input.onButtonPressed(Button.B, function () {
     }
     drawScreen()
 })
-// Update
+
 function drawScreen() {
     basic.showLeds(`
         . . . . .
@@ -155,17 +165,17 @@ let multiplayer : boolean
 let multi_x: number
 let multi_y: number
 let collision: boolean
+let allow_move_x: boolean
+let allow_move_y: boolean
+allow_move_x = true
+allow_move_y = true
 collision = false
 multi_x = 0
 multi_y = 0
 multiplayer = false
 move_axis = "false"
-// false = x axis
-// true = y axis
 x_ofset = 3
 y_ofset = 1
 objects_x = [0]
 objects_y = [0]
 drawScreen()
-
-
