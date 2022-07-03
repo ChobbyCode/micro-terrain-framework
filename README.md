@@ -20,6 +20,14 @@ click search and put in the following link https://github.com/ChobbyCode/micro-t
 First You Need To Go To https://makecode.microbit.org/ and select import. When you have clicked import; click from URL. 
 In the URL space put the following link https://github.com/ChobbyCode/micro-terrain-framework and the project will be imported.
 
+### Download To Your PC
+
+Run the following command in the Terminal to download to your pc
+
+```
+git clone https://github.com/ChobbyCode/micro-terrain-framework.git
+```
+
 ## Help
 
 Unable To Import Extension Using link
