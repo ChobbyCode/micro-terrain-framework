@@ -73,6 +73,10 @@ input.onButtonPressed(Button.A, function () {
     } else if (move_axis == "true") {
         y_ofset += -1
     }
+    if(multiplayer == true){
+        radio.sendString("x" + x_ofset)
+        radio.sendString("y" + y_ofset)
+    }
     drawScreen()
 })
 input.onButtonPressed(Button.AB, function () {
@@ -87,6 +91,10 @@ input.onButtonPressed(Button.B, function () {
         x_ofset += 1
     } else if (move_axis == "true") {
         y_ofset += 1
+    }
+    if (multiplayer == true) {
+        radio.sendString("x" + x_ofset)
+        radio.sendString("y" + y_ofset)
     }
     drawScreen()
 })
