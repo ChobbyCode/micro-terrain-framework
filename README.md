@@ -27,7 +27,7 @@ Run the following command in the Terminal to download to your pc using BASH
 ```
 git clone https://github.com/ChobbyCode/micro-terrain-framework.git
 ```
-Use the following to copy to an existing folder
+Use the following to copy to an existing folder on Linux Machines
 
 ```
 $ cd '[put file location here]'
