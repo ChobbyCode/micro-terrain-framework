@@ -66,3 +66,7 @@ You can install a beta by copying the one of the following links and using the d
 
 - https://github.com/ChobbyCode/micro-terrain-framework/tree/Multiplayer_Beta
 - https://github.com/ChobbyCode/micro-terrain-framework/tree/Collision_beta
+
+BSD 2-Clause License
+
+Copyright (c) 2022, Jacob Hadfield All rights reserved.
