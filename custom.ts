@@ -1,7 +1,13 @@
-//Below Is code For Updates
 //MicroTerrain.Pop()
 //MicroTerrain.Push(0, 0)
 //MicroTerrain.Scene([], [])
+
+
+//BSD 2 - Clause License
+
+//Copyright(c) 2022, Jacob Hadfield All rights reserved.
+
+
 
 /**
 * Use this file to define custom functions and blocks.
@@ -60,18 +66,38 @@ namespace MicroTerrain {
      */
     //% block
 
-    export function Port(port: number){
+    export function Port(port: number): void{
         //radio.setGroup(port)
         //multiplayer = true
+    }
+
+    /**
+     * Use This To Disable Movement On The X Axis
+     */
+    //% block
+
+    export function DisableXMovement(): void{
+        allow_move_x = false
+    }
+    /**
+     * Use This To Disable Movement On The Y Axis
+     */
+    //% block
+    export function DisableYMovement(): void{
+        allow_move_y = false
     }
 }
  
 
 input.onButtonPressed(Button.A, function () {
     if (move_axis == "false") {
-        x_ofset += -1
+        if(allow_move_x == true){
+            x_ofset += -1
+        }
     } else if (move_axis == "true") {
-        y_ofset += -1
+        if(allow_move_y == true){
+            y_ofset += -1
+        }
     }
     if(multiplayer == true){
         radio.sendString("x" + x_ofset)
@@ -88,9 +114,13 @@ input.onButtonPressed(Button.AB, function () {
 })
 input.onButtonPressed(Button.B, function () {
     if (move_axis == "false") {
-        x_ofset += 1
+        if(allow_move_x == true){
+            x_ofset += 1
+        }
     } else if (move_axis == "true") {
-        y_ofset += 1
+        if(allow_move_y == true){
+            y_ofset += 1
+        }
     }
     if (multiplayer == true) {
         radio.sendString("x" + x_ofset)
@@ -98,7 +128,7 @@ input.onButtonPressed(Button.B, function () {
     }
     drawScreen()
 })
-// Update
+
 function drawScreen() {
     basic.showLeds(`
         . . . . .
@@ -145,16 +175,18 @@ let move_axis: string
 let multiplayer : boolean
 let multi_x: number
 let multi_y: number
+let collision: boolean
+let allow_move_x: boolean
+let allow_move_y: boolean
+allow_move_x = true
+allow_move_y = true
+collision = false
 multi_x = 0
 multi_y = 0
 multiplayer = false
 move_axis = "false"
-// false = x axis
-// true = y axis
 x_ofset = 3
 y_ofset = 1
 objects_x = [0]
 objects_y = [0]
 drawScreen()
-
-

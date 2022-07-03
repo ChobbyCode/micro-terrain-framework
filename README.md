@@ -1,8 +1,12 @@
-# Micro Terrain Version 0.1.2
+# Micro Terrain Version 0.2.0
 
 ## About
 
-This is a beta so some features might not work correctly first time. Please report these bugs in Issues.
+Micro Terrain Is A Free Extension For MicroBit Makecode. It is currently version 0.2.0
+
+### It Allows You To
+- Create Sidescrollers
+- Basic Multiplayer Using Radio
 
 ## How To Setup
 
@@ -10,6 +14,26 @@ This is a beta so some features might not work correctly first time. Please repo
 
 First You Need To Go To https://makecode.microbit.org/ and select new project. On sellect a block click Extensions;
 click search and put in the following link https://github.com/ChobbyCode/micro-terrain-framework. Click the one title Micro Terrain Framework.
+
+### Edit Source Code 
+
+First You Need To Go To https://makecode.microbit.org/ and select import. When you have clicked import; click from URL. 
+In the URL space put the following link https://github.com/ChobbyCode/micro-terrain-framework and the project will be imported.
+
+### Download To Your PC
+
+Run the following command in the Terminal to download to your pc using BASH
+
+```
+git clone https://github.com/ChobbyCode/micro-terrain-framework.git
+```
+Use the following to copy to an existing folder on Linux Machines
+
+```
+$ cd '[put file location here]'
+$ git clone https://github.com/ChobbyCode/micro-terrain-framework.git
+```
+
 
 ## Help
 
@@ -56,3 +80,8 @@ You use A To either move left or up, you use B to either move down or right. Use
 You can install a beta by copying the one of the following links and using the default installation guides.
 
 - https://github.com/ChobbyCode/micro-terrain-framework/tree/Multiplayer_Beta
+- https://github.com/ChobbyCode/micro-terrain-framework/tree/multiplayer_enabledbydefault_fix
+
+BSD 2-Clause License
+
+Copyright (c) 2022, Jacob Hadfield All rights reserved.
