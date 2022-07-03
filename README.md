@@ -59,3 +59,9 @@ You can test you have installed it correctly with the following code:
 MicroTerrain.Scene([1, 4], [2, 3])
 ```
 You use A To either move left or up, you use B to either move down or right. Use A+B to change the rotation of these.
+
+##Installing A Beta
+
+You can install a beta by copying the one of the following links and using the default installation guides.
+
+There Are Currently No Betas Available
