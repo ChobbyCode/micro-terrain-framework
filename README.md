@@ -22,11 +22,18 @@ In the URL space put the following link https://github.com/ChobbyCode/micro-terr
 
 ### Download To Your PC
 
-Run the following command in the Terminal to download to your pc
+Run the following command in the Terminal to download to your pc using BASH
 
 ```
 git clone https://github.com/ChobbyCode/micro-terrain-framework.git
 ```
+Use the following to copy to an existing folder
+
+```
+$ cd '[put file location here]'
+$ git clone https://github.com/ChobbyCode/micro-terrain-framework.git
+```
+
 
 ## Help
 
