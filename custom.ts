@@ -112,7 +112,7 @@ function drawScreen() {
     }
     led.plot(2, 2)
     if(multiplayer = true){
-        led.plot((multi_x - x_ofset), (multi_y - y_ofset))
+        led.plot((multi_x - x_ofset + 2), (multi_y - y_ofset + 2))
     }
 }
 
