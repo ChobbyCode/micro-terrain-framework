@@ -64,6 +64,15 @@ namespace MicroTerrain {
         //radio.setGroup(port)
         //multiplayer = true
     }
+
+    /**
+     * Use This To Setup Multiplayer
+     */
+    //% block
+
+    export function EnableCollision() {
+        collision = true
+    }
 }
  
 
@@ -145,6 +154,8 @@ let move_axis: string
 let multiplayer : boolean
 let multi_x: number
 let multi_y: number
+let collision: boolean
+collision = false
 multi_x = 0
 multi_y = 0
 multiplayer = false
