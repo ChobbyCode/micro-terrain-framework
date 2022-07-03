@@ -13,12 +13,12 @@ Micro Terrain Is A Free Extension For MicroBit Makecode. It is currently version
 ### Import As Extension
 
 First You Need To Go To https://makecode.microbit.org/ and select new project. On sellect a block click Extensions;
-click search and put in the following link https://github.com/ChobbyCode/micro-terrain-framework-version-101. Click the one title Micro Terrain Framework.
+click search and put in the following link https://github.com/ChobbyCode/micro-terrain-framework. Click the one title Micro Terrain Framework.
 
 ### Edit Source Code 
 
 First You Need To Go To https://makecode.microbit.org/ and select import. When you have clicked import; click from URL. 
-In the URL space put the following link https://github.com/ChobbyCode/micro-terrain-framework-version-101 and the project will be imported.
+In the URL space put the following link https://github.com/ChobbyCode/micro-terrain-framework and the project will be imported.
 
 ## Help
 
