@@ -2,11 +2,7 @@
 
 ## About
 
-Micro Terrain Is A Free Extension For MicroBit Makecode. It is currently version 0.1.2
-
-### It Allows You To
-- Create Sidescrollers
-- Basic Multiplayer Using Radio
+This is a beta so some features might not work correctly first time. Please report these bugs in Issues.
 
 ## How To Setup
 
@@ -14,11 +10,6 @@ Micro Terrain Is A Free Extension For MicroBit Makecode. It is currently version
 
 First You Need To Go To https://makecode.microbit.org/ and select new project. On sellect a block click Extensions;
 click search and put in the following link https://github.com/ChobbyCode/micro-terrain-framework. Click the one title Micro Terrain Framework.
-
-### Edit Source Code 
-
-First You Need To Go To https://makecode.microbit.org/ and select import. When you have clicked import; click from URL. 
-In the URL space put the following link https://github.com/ChobbyCode/micro-terrain-framework and the project will be imported.
 
 ## Help
 
