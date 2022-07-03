@@ -64,4 +64,4 @@ You use A To either move left or up, you use B to either move down or right. Use
 
 You can install a beta by copying the one of the following links and using the default installation guides.
 
-There Are Currently No Betas Available
+- https://github.com/ChobbyCode/micro-terrain-framework/tree/Multiplayer_Beta
