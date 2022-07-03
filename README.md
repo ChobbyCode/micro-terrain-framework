@@ -2,7 +2,7 @@
 
 ## About
 
-Micro Terrain Is A Free Extension For MicroBit Makecode. It is currently version 0.1.1.
+Micro Terrain Is A Free Extension For MicroBit Makecode. It is currently version 0.1.2
 
 ### It Allows You To
 - Create Sidescrollers
