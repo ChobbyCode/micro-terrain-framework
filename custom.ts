@@ -55,8 +55,17 @@ namespace MicroTerrain {
     export function Source(): void {
 
     }
-}
+    /**
+     * Use This To Setup Multiplayer
+     */
+    //% block
 
+    export function Port(port: number){
+        radio.setGroup(port)
+        multiplayer = true
+    }
+}
+ 
 
 input.onButtonPressed(Button.A, function () {
     if (move_axis == "false") {
@@ -94,12 +103,42 @@ function drawScreen() {
         led.plot(objects_x[i] - x_ofset, objects_y[i] - y_ofset)
     }
     led.plot(2, 2)
+    if(multiplayer = true){
+        led.plot((multi_x - x_ofset), (multi_y - y_ofset))
+    }
 }
+
+radio.onReceivedString(function(receivedString: string) {
+    if (receivedString.charAt(0) == "x"){
+        multi_x = parseInt(receivedString.substr(1, receivedString.length))
+    }else if(receivedString.charAt(0) == "y"){
+        multi_x = parseInt(receivedString.substr(1, receivedString.length))
+    }else{
+
+        basic.showLeds(`
+        . . # . .
+        . . # . .
+        . . # . .
+        . . . . .
+        . . # . .
+        `)
+    }
+    led.plot((multi_x - x_ofset), (multi_y - y_ofset))
+})
+
+
+
 let objects_y: number[] = []
 let objects_x: number[] = []
 let x_ofset: number
 let y_ofset: number
 let move_axis: string
+let multiplayer : boolean
+let multi_x: number
+let multi_y: number
+multi_x = 0
+multi_y = 0
+multiplayer = false
 move_axis = "false"
 // false = x axis
 // true = y axis
