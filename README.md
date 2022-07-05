@@ -3,6 +3,7 @@
 ## About
 
 Micro Terrain Is A Free Extension For MicroBit Makecode. It is currently version 0.2.0
+Micro Terrain Is A Simple Tool You Can Use To Help Make Games On The Microbit. This tool is aimed at 8-14 year olds but you can still use it if you are out of these ages
 
 ### It Allows You To
 - Create Sidescrollers
